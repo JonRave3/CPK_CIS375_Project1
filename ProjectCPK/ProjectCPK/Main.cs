@@ -16,7 +16,7 @@ namespace ProjectCPK
         {
             InitializeComponent();
         }
-
+        #region Buttons
         private void addStoreToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -41,5 +41,11 @@ namespace ProjectCPK
         {
 
         }
+
+        private void batchToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+        #endregion
     }
 }
