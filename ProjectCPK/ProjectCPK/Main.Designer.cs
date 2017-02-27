@@ -30,27 +30,27 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.export_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.login_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.config_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.editToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStoreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.addAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.customerAccountsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.add_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.edit_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.remove_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byDayToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byItemToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.salesReportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byDayToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.byMonthToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.byYearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventory_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventory_byStore_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.inventory_byItem_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salesReports_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sr_byDay_ToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.sr_byWeek_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sr_byMonth_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sr_byYear_ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.byWeekToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.configToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -72,118 +72,139 @@
             // fileToolStripMenuItem
             // 
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.exportToolStripMenuItem,
-            this.loginToolStripMenuItem,
-            this.configToolStripMenuItem,
-            this.exitToolStripMenuItem});
+            this.export_ToolStripMenuItem,
+            this.login_ToolStripMenuItem,
+            this.config_ToolStripMenuItem,
+            this.exit_ToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(50, 29);
             this.fileToolStripMenuItem.Text = "File";
             // 
-            // exportToolStripMenuItem
+            // export_ToolStripMenuItem
             // 
-            this.exportToolStripMenuItem.Enabled = false;
-            this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
-            this.exportToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.exportToolStripMenuItem.Text = "Export";
-            this.exportToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
+            this.export_ToolStripMenuItem.Enabled = false;
+            this.export_ToolStripMenuItem.Name = "export_ToolStripMenuItem";
+            this.export_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.export_ToolStripMenuItem.Text = "Export";
+            this.export_ToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
-            // exitToolStripMenuItem
+            // login_ToolStripMenuItem
             // 
-            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 30);
-            this.exitToolStripMenuItem.Text = "Exit";
-            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
+            this.login_ToolStripMenuItem.Name = "login_ToolStripMenuItem";
+            this.login_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.login_ToolStripMenuItem.Text = "Login";
+            this.login_ToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
+            // 
+            // config_ToolStripMenuItem
+            // 
+            this.config_ToolStripMenuItem.Name = "config_ToolStripMenuItem";
+            this.config_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.config_ToolStripMenuItem.Text = "Config";
+            this.config_ToolStripMenuItem.Click += new System.EventHandler(this.configToolStripMenuItem_Click);
+            // 
+            // exit_ToolStripMenuItem
+            // 
+            this.exit_ToolStripMenuItem.Name = "exit_ToolStripMenuItem";
+            this.exit_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.exit_ToolStripMenuItem.Text = "Exit";
+            this.exit_ToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
             this.editToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addStoreToolStripMenuItem,
-            this.addAccountToolStripMenuItem,
-            this.customerAccountsToolStripMenuItem});
-            this.editToolStripMenuItem.Enabled = false;
+            this.add_ToolStripMenuItem,
+            this.edit_ToolStripMenuItem,
+            this.remove_ToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.editToolStripMenuItem.Text = "Edit";
             // 
-            // addStoreToolStripMenuItem
+            // add_ToolStripMenuItem
             // 
-            this.addStoreToolStripMenuItem.Name = "addStoreToolStripMenuItem";
-            this.addStoreToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.addStoreToolStripMenuItem.Text = "Add";
-            this.addStoreToolStripMenuItem.Click += new System.EventHandler(this.addStoreToolStripMenuItem_Click);
+            this.add_ToolStripMenuItem.Name = "add_ToolStripMenuItem";
+            this.add_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.add_ToolStripMenuItem.Text = "Add";
+            this.add_ToolStripMenuItem.Click += new System.EventHandler(this.addDialog_ToolStripMenuItem_Click);
             // 
-            // addAccountToolStripMenuItem
+            // edit_ToolStripMenuItem
             // 
-            this.addAccountToolStripMenuItem.Name = "addAccountToolStripMenuItem";
-            this.addAccountToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.addAccountToolStripMenuItem.Text = "Edit";
+            this.edit_ToolStripMenuItem.Name = "edit_ToolStripMenuItem";
+            this.edit_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.edit_ToolStripMenuItem.Text = "Edit";
+            this.edit_ToolStripMenuItem.Click += new System.EventHandler(this.editDialog_ToolStripMenuItem_Click);
             // 
-            // customerAccountsToolStripMenuItem
+            // remove_ToolStripMenuItem
             // 
-            this.customerAccountsToolStripMenuItem.Name = "customerAccountsToolStripMenuItem";
-            this.customerAccountsToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.customerAccountsToolStripMenuItem.Text = "Remove";
+            this.remove_ToolStripMenuItem.Name = "remove_ToolStripMenuItem";
+            this.remove_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.remove_ToolStripMenuItem.Text = "Remove";
+            this.remove_ToolStripMenuItem.Click += new System.EventHandler(this.removeDialog_ToolStripMenuItem_Click);
             // 
             // viewToolStripMenuItem
             // 
             this.viewToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.salesToolStripMenuItem,
-            this.salesReportsToolStripMenuItem});
+            this.inventory_ToolStripMenuItem,
+            this.salesReports_ToolStripMenuItem});
             this.viewToolStripMenuItem.Enabled = false;
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(61, 29);
             this.viewToolStripMenuItem.Text = "View";
             // 
-            // salesToolStripMenuItem
+            // inventory_ToolStripMenuItem
             // 
-            this.salesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.byDayToolStripMenuItem,
-            this.byItemToolStripMenuItem});
-            this.salesToolStripMenuItem.Name = "salesToolStripMenuItem";
-            this.salesToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
-            this.salesToolStripMenuItem.Text = "Inventory";
+            this.inventory_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.inventory_byStore_ToolStripMenuItem,
+            this.inventory_byItem_ToolStripMenuItem});
+            this.inventory_ToolStripMenuItem.Name = "inventory_ToolStripMenuItem";
+            this.inventory_ToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
+            this.inventory_ToolStripMenuItem.Text = "Inventory";
             // 
-            // byDayToolStripMenuItem
+            // inventory_byStore_ToolStripMenuItem
             // 
-            this.byDayToolStripMenuItem.Name = "byDayToolStripMenuItem";
-            this.byDayToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
-            this.byDayToolStripMenuItem.Text = "By Store";
+            this.inventory_byStore_ToolStripMenuItem.Name = "inventory_byStore_ToolStripMenuItem";
+            this.inventory_byStore_ToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
+            this.inventory_byStore_ToolStripMenuItem.Text = "By Store";
             // 
-            // byItemToolStripMenuItem
+            // inventory_byItem_ToolStripMenuItem
             // 
-            this.byItemToolStripMenuItem.Name = "byItemToolStripMenuItem";
-            this.byItemToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
-            this.byItemToolStripMenuItem.Text = "By Item";
+            this.inventory_byItem_ToolStripMenuItem.Name = "inventory_byItem_ToolStripMenuItem";
+            this.inventory_byItem_ToolStripMenuItem.Size = new System.Drawing.Size(162, 30);
+            this.inventory_byItem_ToolStripMenuItem.Text = "By Item";
             // 
-            // salesReportsToolStripMenuItem
+            // salesReports_ToolStripMenuItem
             // 
-            this.salesReportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.byDayToolStripMenuItem1,
-            this.byWeekToolStripMenuItem,
-            this.byMonthToolStripMenuItem,
-            this.byYearToolStripMenuItem});
-            this.salesReportsToolStripMenuItem.Name = "salesReportsToolStripMenuItem";
-            this.salesReportsToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.salesReportsToolStripMenuItem.Text = "Sales Reports";
+            this.salesReports_ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sr_byDay_ToolStripMenuItem1,
+            this.sr_byWeek_ToolStripMenuItem,
+            this.sr_byMonth_ToolStripMenuItem,
+            this.sr_byYear_ToolStripMenuItem});
+            this.salesReports_ToolStripMenuItem.Name = "salesReports_ToolStripMenuItem";
+            this.salesReports_ToolStripMenuItem.Size = new System.Drawing.Size(203, 30);
+            this.salesReports_ToolStripMenuItem.Text = "Sales Reports";
             // 
-            // byDayToolStripMenuItem1
+            // sr_byDay_ToolStripMenuItem1
             // 
-            this.byDayToolStripMenuItem1.Name = "byDayToolStripMenuItem1";
-            this.byDayToolStripMenuItem1.Size = new System.Drawing.Size(174, 30);
-            this.byDayToolStripMenuItem1.Text = "By Day";
+            this.sr_byDay_ToolStripMenuItem1.Name = "sr_byDay_ToolStripMenuItem1";
+            this.sr_byDay_ToolStripMenuItem1.Size = new System.Drawing.Size(174, 30);
+            this.sr_byDay_ToolStripMenuItem1.Text = "By Day";
             // 
-            // byMonthToolStripMenuItem
+            // sr_byWeek_ToolStripMenuItem
             // 
-            this.byMonthToolStripMenuItem.Name = "byMonthToolStripMenuItem";
-            this.byMonthToolStripMenuItem.Size = new System.Drawing.Size(174, 30);
-            this.byMonthToolStripMenuItem.Text = "By Month";
+            this.sr_byWeek_ToolStripMenuItem.Name = "sr_byWeek_ToolStripMenuItem";
+            this.sr_byWeek_ToolStripMenuItem.Size = new System.Drawing.Size(174, 30);
+            this.sr_byWeek_ToolStripMenuItem.Text = "By Week";
             // 
-            // byYearToolStripMenuItem
+            // sr_byMonth_ToolStripMenuItem
             // 
-            this.byYearToolStripMenuItem.Name = "byYearToolStripMenuItem";
-            this.byYearToolStripMenuItem.Size = new System.Drawing.Size(174, 30);
-            this.byYearToolStripMenuItem.Text = "By Year";
+            this.sr_byMonth_ToolStripMenuItem.Name = "sr_byMonth_ToolStripMenuItem";
+            this.sr_byMonth_ToolStripMenuItem.Size = new System.Drawing.Size(174, 30);
+            this.sr_byMonth_ToolStripMenuItem.Text = "By Month";
+            // 
+            // sr_byYear_ToolStripMenuItem
+            // 
+            this.sr_byYear_ToolStripMenuItem.Name = "sr_byYear_ToolStripMenuItem";
+            this.sr_byYear_ToolStripMenuItem.Size = new System.Drawing.Size(174, 30);
+            this.sr_byYear_ToolStripMenuItem.Text = "By Year";
             // 
             // helpToolStripMenuItem
             // 
@@ -201,26 +222,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            // 
-            // byWeekToolStripMenuItem
-            // 
-            this.byWeekToolStripMenuItem.Name = "byWeekToolStripMenuItem";
-            this.byWeekToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.byWeekToolStripMenuItem.Text = "By Week";
-            // 
-            // loginToolStripMenuItem
-            // 
-            this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.loginToolStripMenuItem.Text = "Login";
-            this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
-            // 
-            // configToolStripMenuItem
-            // 
-            this.configToolStripMenuItem.Name = "configToolStripMenuItem";
-            this.configToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
-            this.configToolStripMenuItem.Text = "Config";
-            this.configToolStripMenuItem.Click += new System.EventHandler(this.configToolStripMenuItem_Click);
             // 
             // RxCPK
             // 
@@ -242,27 +243,27 @@
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem export_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exit_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addStoreToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem addAccountToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem add_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem edit_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem viewToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem customerAccountsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byDayToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byItemToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem salesReportsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byDayToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem byMonthToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem byYearToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem remove_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventory_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventory_byStore_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem inventory_byItem_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salesReports_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sr_byDay_ToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem sr_byMonth_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sr_byYear_ToolStripMenuItem;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.ToolStripMenuItem byWeekToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem loginToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem configToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem sr_byWeek_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem login_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem config_ToolStripMenuItem;
     }
 }
 
