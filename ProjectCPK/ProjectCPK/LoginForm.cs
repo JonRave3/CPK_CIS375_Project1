@@ -42,6 +42,13 @@ namespace ProjectCPK
             //disable window
             this.Enabled = false;
             //test connection
+            if (RxCPK.connection.TestConnection())
+            {
+                MessageBox.Show("Successful Connection!");
+            }
+            else {
+                MessageBox.Show("Connection Failed!");
+            }
             this.Enabled = true;
         }
         

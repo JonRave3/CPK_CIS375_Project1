@@ -13,14 +13,15 @@ namespace ProjectCPK
     public partial class RxCPK : Form
     {
         protected internal static bool isLoggedIn {get; set;}
-
+        protected internal static DBConnect connection;
         public RxCPK()
         {
             InitializeComponent();
+            connection = new DBConnect();
             isLoggedIn = false;
         }
         
-        #region Buttons
+        #region Buttons Actions
         private void addDialog_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             new AddForm().Show();
@@ -64,6 +65,8 @@ namespace ProjectCPK
         }
         #endregion
 
+
+        #region Helper Methods
         protected internal void checkLoggedIn()
         {
             if (isLoggedIn)
@@ -79,7 +82,7 @@ namespace ProjectCPK
                 export_ToolStripMenuItem.Enabled = false;
             }
         }
+        #endregion
 
-       
     }
 }
