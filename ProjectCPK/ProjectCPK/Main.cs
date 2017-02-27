@@ -12,30 +12,18 @@ namespace ProjectCPK
 {
     public partial class RxCPK : Form
     {
-        AddForm add_form;
-        LoginForm login_form;
-        EditForm edit_form;
-        RemoveForm remove_form;
-        ConfigForm config_form;
-        AboutForm about_form;
+        protected internal static bool isLoggedIn {get; set;}
+
         public RxCPK()
         {
             InitializeComponent();
-            InitializeWindows();
+            isLoggedIn = false;
         }
-        private void InitializeWindows()
-        {
-            add_form = new AddForm();
-            login_form = new LoginForm();
-            edit_form = new EditForm();
-            remove_form = new RemoveForm();
-            config_form = new ConfigForm();
-            about_form = new AboutForm();
-        }
+        
         #region Buttons
         private void addDialog_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            add_form.Show();
+            new AddForm().Show();
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -50,24 +38,48 @@ namespace ProjectCPK
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            about_form.Show();
+            new AboutForm().Show();
         }
         private void loginToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            login_form.Show();
+            new LoginForm(this).Show();
         }
         private void configToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            config_form.Show();
+            new ConfigForm().Show();
         }
         private void editDialog_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            edit_form.Show();
+            new EditForm().Show();
         }
         private void removeDialog_ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            remove_form.Show();
+            new RemoveForm().Show();
+        }
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            isLoggedIn = false;
+            checkLoggedIn();
+            MessageBox.Show("You have been logged out the System!", "Logged Out!", MessageBoxButtons.OK);
         }
         #endregion
+
+        protected internal void checkLoggedIn()
+        {
+            if (isLoggedIn)
+            {
+                viewToolStripMenuItem.Enabled = true;
+                editToolStripMenuItem.Enabled = true;
+                export_ToolStripMenuItem.Enabled = true;
+            }
+            else 
+            {
+                viewToolStripMenuItem.Enabled = false;
+                editToolStripMenuItem.Enabled = false;
+                export_ToolStripMenuItem.Enabled = false;
+            }
+        }
+
+       
     }
 }

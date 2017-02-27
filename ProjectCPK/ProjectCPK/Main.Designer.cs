@@ -51,6 +51,7 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.export_ToolStripMenuItem,
             this.login_ToolStripMenuItem,
+            this.logoutToolStripMenuItem,
             this.config_ToolStripMenuItem,
             this.exit_ToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
@@ -84,28 +86,28 @@
             // 
             this.export_ToolStripMenuItem.Enabled = false;
             this.export_ToolStripMenuItem.Name = "export_ToolStripMenuItem";
-            this.export_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.export_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.export_ToolStripMenuItem.Text = "Export";
             this.export_ToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // login_ToolStripMenuItem
             // 
             this.login_ToolStripMenuItem.Name = "login_ToolStripMenuItem";
-            this.login_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.login_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.login_ToolStripMenuItem.Text = "Login";
             this.login_ToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // config_ToolStripMenuItem
             // 
             this.config_ToolStripMenuItem.Name = "config_ToolStripMenuItem";
-            this.config_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.config_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.config_ToolStripMenuItem.Text = "Config";
             this.config_ToolStripMenuItem.Click += new System.EventHandler(this.configToolStripMenuItem_Click);
             // 
             // exit_ToolStripMenuItem
             // 
             this.exit_ToolStripMenuItem.Name = "exit_ToolStripMenuItem";
-            this.exit_ToolStripMenuItem.Size = new System.Drawing.Size(150, 30);
+            this.exit_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
             this.exit_ToolStripMenuItem.Text = "Exit";
             this.exit_ToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -115,6 +117,7 @@
             this.add_ToolStripMenuItem,
             this.edit_ToolStripMenuItem,
             this.remove_ToolStripMenuItem});
+            this.editToolStripMenuItem.Enabled = false;
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(54, 29);
             this.editToolStripMenuItem.Text = "Edit";
@@ -223,6 +226,13 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            // 
             // RxCPK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -264,6 +274,7 @@
         private System.Windows.Forms.ToolStripMenuItem sr_byWeek_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem login_ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem config_ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
     }
 }
 

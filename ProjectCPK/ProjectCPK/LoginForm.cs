@@ -10,10 +10,17 @@ using System.Windows.Forms;
 
 namespace ProjectCPK
 {
+    
     public partial class LoginForm : Form
     {
+        RxCPK parent;
         public LoginForm()
         {
+            InitializeComponent();
+        }
+        public LoginForm(RxCPK par)
+        {
+            parent = par;
             InitializeComponent();
         }
         private void login_submit_btn_Click(object sender, EventArgs e)
@@ -22,7 +29,9 @@ namespace ProjectCPK
             //if connection successful and user account and password match
             //enable functionality of application
             //close this form
-            
+            RxCPK.isLoggedIn = true;
+            if(parent != null)
+                parent.checkLoggedIn();
             this.Close();
             //otherwise prompt user that information is incorrect and allow to retry
             
