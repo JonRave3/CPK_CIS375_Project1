@@ -38,7 +38,8 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(18, 14);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 32);
             this.label1.TabIndex = 0;
@@ -48,7 +49,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 54);
+            this.label2.Location = new System.Drawing.Point(22, 83);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(87, 25);
             this.label2.TabIndex = 1;
@@ -56,9 +58,10 @@
             // 
             // about_close_btn
             // 
-            this.about_close_btn.Location = new System.Drawing.Point(172, 104);
+            this.about_close_btn.Location = new System.Drawing.Point(258, 160);
+            this.about_close_btn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.about_close_btn.Name = "about_close_btn";
-            this.about_close_btn.Size = new System.Drawing.Size(75, 23);
+            this.about_close_btn.Size = new System.Drawing.Size(112, 35);
             this.about_close_btn.TabIndex = 2;
             this.about_close_btn.Text = "Close";
             this.about_close_btn.UseVisualStyleBackColor = true;
@@ -67,22 +70,25 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 79);
+            this.label3.Location = new System.Drawing.Point(26, 122);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(376, 13);
+            this.label3.Size = new System.Drawing.Size(562, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Samia Chahine, Brennan Crispin, Raspinder Kaur, Jon Ravelo, Ayesha Saleem";
             // 
             // AboutForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(414, 140);
+            this.ClientSize = new System.Drawing.Size(631, 208);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.about_close_btn);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "AboutForm";
             this.Text = "About";
             this.ResumeLayout(false);

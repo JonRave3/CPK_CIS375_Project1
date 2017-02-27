@@ -83,22 +83,31 @@ namespace ProjectCPK
                 return false;
         }
         //Insert statement
-        public void Insert(string qry = "")
+        public bool Insert(string qry = "")
         {
             //string query = "INSERT INTO tableinfo (name, age) VALUES('John Smith', '33')";
 
             //open connection
             if (this.OpenConnection() == true)
             {
-                //create command and assign the query and connection from the constructor
-                MySqlCommand cmd = new MySqlCommand(qry, db_conn);
+                try
+                {
+                    //create command and assign the query and connection from the constructor
+                    MySqlCommand cmd = new MySqlCommand(qry, db_conn);
 
-                //Execute command
-                cmd.ExecuteNonQuery();
+                    //Execute command
+                    cmd.ExecuteNonQuery();
 
-                //close connection
-                this.CloseConnection();
+                    //close connection
+                    this.CloseConnection();
+                }
+                catch (Exception e0)
+                {
+                    return false;
+                }
+                return true;
             }
+            return false;
         }
 
         //Update statement

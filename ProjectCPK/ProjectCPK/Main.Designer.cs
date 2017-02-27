@@ -66,7 +66,8 @@
             this.aboutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(310, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(465, 35);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -86,35 +87,35 @@
             // 
             this.export_ToolStripMenuItem.Enabled = false;
             this.export_ToolStripMenuItem.Name = "export_ToolStripMenuItem";
-            this.export_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.export_ToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.export_ToolStripMenuItem.Text = "Export";
             this.export_ToolStripMenuItem.Click += new System.EventHandler(this.exportToolStripMenuItem_Click);
             // 
             // login_ToolStripMenuItem
             // 
             this.login_ToolStripMenuItem.Name = "login_ToolStripMenuItem";
-            this.login_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.login_ToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.login_ToolStripMenuItem.Text = "Login";
             this.login_ToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
             // logoutToolStripMenuItem
             // 
             this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.logoutToolStripMenuItem.Text = "Logout";
             this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // config_ToolStripMenuItem
             // 
             this.config_ToolStripMenuItem.Name = "config_ToolStripMenuItem";
-            this.config_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.config_ToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.config_ToolStripMenuItem.Text = "Config";
             this.config_ToolStripMenuItem.Click += new System.EventHandler(this.configToolStripMenuItem_Click);
             // 
             // exit_ToolStripMenuItem
             // 
             this.exit_ToolStripMenuItem.Name = "exit_ToolStripMenuItem";
-            this.exit_ToolStripMenuItem.Size = new System.Drawing.Size(211, 30);
+            this.exit_ToolStripMenuItem.Size = new System.Drawing.Size(154, 30);
             this.exit_ToolStripMenuItem.Text = "Exit";
             this.exit_ToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -235,11 +236,13 @@
             // 
             // RxCPK
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(310, 37);
+            this.ClientSize = new System.Drawing.Size(465, 37);
             this.Controls.Add(this.menuStrip1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RxCPK";
             this.Text = "Rx CPK";
             this.menuStrip1.ResumeLayout(false);

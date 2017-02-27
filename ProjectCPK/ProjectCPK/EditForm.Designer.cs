@@ -44,17 +44,19 @@
             this.tabControl1.Controls.Add(this.remove_store_tab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(875, 534);
+            this.tabControl1.Size = new System.Drawing.Size(729, 484);
             this.tabControl1.TabIndex = 2;
             // 
             // remove_item_tab
             // 
-            this.remove_item_tab.Location = new System.Drawing.Point(4, 22);
+            this.remove_item_tab.Location = new System.Drawing.Point(4, 29);
+            this.remove_item_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_item_tab.Name = "remove_item_tab";
-            this.remove_item_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.remove_item_tab.Size = new System.Drawing.Size(867, 508);
+            this.remove_item_tab.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.remove_item_tab.Size = new System.Drawing.Size(721, 451);
             this.remove_item_tab.TabIndex = 0;
             this.remove_item_tab.Text = "Item";
             this.remove_item_tab.UseVisualStyleBackColor = true;
@@ -62,8 +64,9 @@
             // remove_customer_tab
             // 
             this.remove_customer_tab.Location = new System.Drawing.Point(4, 22);
+            this.remove_customer_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_customer_tab.Name = "remove_customer_tab";
-            this.remove_customer_tab.Size = new System.Drawing.Size(799, 334);
+            this.remove_customer_tab.Size = new System.Drawing.Size(1304, 796);
             this.remove_customer_tab.TabIndex = 3;
             this.remove_customer_tab.Text = "Customer Account";
             this.remove_customer_tab.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // remove_employee_tab
             // 
             this.remove_employee_tab.Location = new System.Drawing.Point(4, 22);
+            this.remove_employee_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_employee_tab.Name = "remove_employee_tab";
-            this.remove_employee_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.remove_employee_tab.Size = new System.Drawing.Size(799, 334);
+            this.remove_employee_tab.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.remove_employee_tab.Size = new System.Drawing.Size(1304, 796);
             this.remove_employee_tab.TabIndex = 1;
             this.remove_employee_tab.Text = "Employee";
             this.remove_employee_tab.UseVisualStyleBackColor = true;
@@ -81,20 +85,23 @@
             // remove_store_tab
             // 
             this.remove_store_tab.Location = new System.Drawing.Point(4, 22);
+            this.remove_store_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_store_tab.Name = "remove_store_tab";
-            this.remove_store_tab.Size = new System.Drawing.Size(799, 334);
+            this.remove_store_tab.Size = new System.Drawing.Size(1304, 796);
             this.remove_store_tab.TabIndex = 2;
             this.remove_store_tab.Text = "Store";
             this.remove_store_tab.UseVisualStyleBackColor = true;
             // 
             // EditForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 534);
+            this.ClientSize = new System.Drawing.Size(729, 484);
             this.Controls.Add(this.tabControl1);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "EditForm";
-            this.Text = "EditForm";
+            this.Text = "Edit";
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
