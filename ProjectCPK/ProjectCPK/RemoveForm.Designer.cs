@@ -66,7 +66,7 @@
             this.remove_customer_tab.Location = new System.Drawing.Point(4, 29);
             this.remove_customer_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_customer_tab.Name = "remove_customer_tab";
-            this.remove_customer_tab.Size = new System.Drawing.Size(1000, 431);
+            this.remove_customer_tab.Size = new System.Drawing.Size(720, 451);
             this.remove_customer_tab.TabIndex = 3;
             this.remove_customer_tab.Text = "Customer Account";
             this.remove_customer_tab.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.remove_employee_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_employee_tab.Name = "remove_employee_tab";
             this.remove_employee_tab.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.remove_employee_tab.Size = new System.Drawing.Size(1000, 431);
+            this.remove_employee_tab.Size = new System.Drawing.Size(720, 451);
             this.remove_employee_tab.TabIndex = 1;
             this.remove_employee_tab.Text = "Employee";
             this.remove_employee_tab.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.remove_store_tab.Location = new System.Drawing.Point(4, 29);
             this.remove_store_tab.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.remove_store_tab.Name = "remove_store_tab";
-            this.remove_store_tab.Size = new System.Drawing.Size(1000, 431);
+            this.remove_store_tab.Size = new System.Drawing.Size(720, 451);
             this.remove_store_tab.TabIndex = 2;
             this.remove_store_tab.Text = "Store";
             this.remove_store_tab.UseVisualStyleBackColor = true;
@@ -102,6 +102,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "RemoveForm";
             this.Text = "Remove";
+            this.TopMost = true;
             this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
