@@ -18,6 +18,7 @@ namespace ProjectCPK
         private string db_pw = "EACV1VFkIQ8N6IGr";
         private string db_server;
         private string db_uid;
+        private string conn_str;
         
         public DBConnect()
         {
@@ -30,7 +31,7 @@ namespace ProjectCPK
             this.db_pw = "EACV1VFkIQ8N6IGr";
             this.db_server = "localhost";
             this.db_uid = "";
-            string conn_str = String.Format("server=localhost;database={0};uid={1};pwd={2};", db_name, db_un, db_pw);
+            conn_str = String.Format("server=localhost;database={0};uid={1};pwd={2};", db_name, db_un, db_pw);
             db_conn = new MySqlConnection(conn_str);
            
         }
@@ -72,6 +73,10 @@ namespace ProjectCPK
             }
         }
 
+        protected internal void UpdateConnection(string constr)
+        { 
+            db_conn = new MySqlConnection(constr);
+        }
         public bool TestConnection()
         {
             if (OpenConnection())
@@ -80,6 +85,21 @@ namespace ProjectCPK
                 return true;
             }
             else 
+                return false;
+        }
+        public bool TestConnection(string constr)
+        {
+            string temp_con = conn_str;
+            conn_str = constr;
+            db_conn = new MySqlConnection(conn_str);
+            if (OpenConnection())
+            {
+                CloseConnection();
+                conn_str = temp_con;
+                db_conn = new MySqlConnection(conn_str);
+                return true;
+            }
+            else
                 return false;
         }
         //Insert statement
